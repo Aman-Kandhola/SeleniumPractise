@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WebCom">
+  <test thread-count="5" name="Test">	  
+    <classes>
+      <class name="Test.MobileComms">
+		  <methods>
+			<include name="Airtel"></include>
+		</methods>
+	  </class>
+      <class name = "Test.WebCommunications"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Web Tests">
+		<classes>
+			<class name="WebCommunications"/>
+		</classes>
+	</test>
+  
+  
+</suite> <!-- Suite -->
+
+
