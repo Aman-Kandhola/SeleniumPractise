@@ -49,7 +49,7 @@ public class StaticDropdowns {
 	public static void staticDropDownwithVisibleText(Select selectClassObj) {
 	
 		System.out.println("\nBelow selected with Visible text");
-		System.ou
+	
 		
 		selectClassObj.selectByVisibleText("INR");
 		System.out.println(selectClassObj.getFirstSelectedOption().getText());
