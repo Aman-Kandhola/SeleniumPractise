@@ -44,7 +44,7 @@ public class CompleteOrderTest {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
 		System.out.println(driver.findElement(By.cssSelector("#toast-container")).getText());
 		
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(driver.findElement(By.cssSelector("22"))));
+		wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector("22"))));
 		
 		driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
 		
